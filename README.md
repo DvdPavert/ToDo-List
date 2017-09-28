@@ -1,2 +1,2 @@
 # ToDo-List assignment for Uva native app studio course
-had a nine on better code hub
+[![BCH compliance](https://bettercodehub.com/edge/badge/DvdPavert/ToDo-List?branch=master)](https://bettercodehub.com/)
