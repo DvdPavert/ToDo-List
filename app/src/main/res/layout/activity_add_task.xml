@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button"
+            android:text="Add task"
             android:onClick="getTask"
             tools:layout_editor_absoluteX="145dp"
             tools:layout_editor_absoluteY="278dp" />

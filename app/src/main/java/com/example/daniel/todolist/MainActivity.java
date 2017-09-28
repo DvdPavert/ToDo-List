@@ -12,7 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    
+
     private ArrayList<Task> list = new ArrayList<>();
     private ListView listTasks;
     private Context context = this;
