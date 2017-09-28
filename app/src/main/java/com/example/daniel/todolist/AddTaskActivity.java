@@ -3,6 +3,7 @@ package com.example.daniel.todolist;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -20,9 +21,9 @@ public class AddTaskActivity extends AppCompatActivity {
         editTask = (EditText) findViewById(R.id.editTask);
     }
 
-    public void getTask()
+    public void getTask(View view)
     {
-        DBHelper db = new DBHelper(this); //// TODO: 27/09/2017 Hoe krijg ik de db hier goed? 
+        DBHelper db = new DBHelper(this);
 
         String title = editTitle.getText().toString();
         String task = editTask.getText().toString();

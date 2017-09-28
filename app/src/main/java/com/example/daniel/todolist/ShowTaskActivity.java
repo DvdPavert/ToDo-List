@@ -25,7 +25,7 @@ public class ShowTaskActivity extends AppCompatActivity {
 
     private void loadTask()
     {
-        Task task = (Task) getIntent().getSerializableExtra("task");
+        task = (Task) getIntent().getSerializableExtra("task");
         textTitle.setText(task.getName());
         textTask.setText(task.getTask());
     }
@@ -34,8 +34,9 @@ public class ShowTaskActivity extends AppCompatActivity {
     {
         DBHelper db = new DBHelper(this);
 
-        task.setStatus("complete");
-        db.update(task);
+        //task.setStatus("complete");
+        //db.update(task);
+        db.delete(task);
 
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
