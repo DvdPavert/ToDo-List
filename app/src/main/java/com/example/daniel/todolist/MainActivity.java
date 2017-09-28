@@ -12,11 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
-
-    //private ArrayList test = new ArrayList<>();
-
-
+    
     private ArrayList<Task> list = new ArrayList<>();
     private ListView listTasks;
     private Context context = this;
@@ -30,18 +26,7 @@ public class MainActivity extends AppCompatActivity {
         listTasks = (ListView) findViewById(R.id.listTasks);
 
 
-//        Task testTask1 = new Task("1 + App maken", "Maak een app die SQLite implementeerd");
-//        Task testTask2 = new Task("2 + App maken", "Maak een app die SQLite implementeerd");
-//        Task testTask3 = new Task("3 + App maken", "Maak een app die SQLite implementeerd");
-//        db.create(testTask1);
-//        db.create(testTask2);
-//        db.create(testTask3);
-
-        list = db.read(); //// TODO: 28/09/2017 WHY 7 ?!?!?!?! 
-
-        //test.add(testTask1);
-        //test.add(testTask2);
-        //test.add(list.size() + "");
+        list = db.read();
 
         listTasks.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

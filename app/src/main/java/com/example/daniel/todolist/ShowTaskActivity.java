@@ -30,12 +30,21 @@ public class ShowTaskActivity extends AppCompatActivity {
         textTask.setText(task.getTask());
     }
 
-    public void completeTask(View view)
+    public  void completeTask(View view)
     {
         DBHelper db = new DBHelper(this);
 
-        //task.setStatus("complete");
-        //db.update(task);
+        task.setName(task.getName() + " - completed");
+        task.setStatus("complete");
+        db.update(task);
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void deleteTask(View view)
+    {
+        DBHelper db = new DBHelper(this);
         db.delete(task);
 
         Intent intent = new Intent(this, MainActivity.class);

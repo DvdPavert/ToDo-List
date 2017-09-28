@@ -43,7 +43,6 @@ public class DBHelper extends SQLiteOpenHelper {
     public void create(Task task)
     {
         SQLiteDatabase db = getWritableDatabase();
-        //onUpgrade(db, 1, 1);
 
         ContentValues values = new ContentValues();
         values.put(KEY_NAME, task.getName());

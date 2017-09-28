@@ -31,8 +31,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Complete and delete"
+            android:text="Complete"
             android:onClick="completeTask"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:onClick="deleteTask"/>
     </LinearLayout>
 
 </LinearLayout>
